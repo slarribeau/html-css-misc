@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+   body {
+     font-family: Helvetica;
+   }
+   .parallax {
+     /* The image used */
+     background-image: url("abstract-business-code-270348.jpg");
+
+     /* Set a specific height */
+     /*min-height: 400px; 
+
+    /* Create the parallax scrolling effect */
+    /*background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+	    z-index:0; */
+  }
+  #fixed_header { 
+     position: fixed; 
+     width: 100%; 
+     height: 40px; 
+     background-color: black; 
+     color:white;
+     z-index:100;
+  }
+  #intro { 
+     position: relative; 
+     width: 100%; 
+     height: 200px; 
+     background-color: grey; 
+     color:white;
+     border: solid 3px #9e70ba; 
+     font-size: 24px; 
+     text-align: center; 
+     z-index:0;
+   } 
+  .box_with_float { 
+     position: relative; 
+     width: 100%; 
+     height: 700px;  
+     background-color: grey; 
+     color:white;
+     border: solid 3px #9e70ba; 
+     font-size: 24px; 
+     text-align: center; 
+     z-index:0;
+   } 
+  .box { 
+     position: relative; 
+     width: 100%; 
+     /*height: 600px;  */
+     background-color: grey; 
+     color:white;
+     border: solid 3px #9e70ba; 
+     font-size: 24px; 
+     text-align: center; 
+     z-index:0;
+     /* text-align: center;  */
+     /* clear:left; */
+   } 
+
+  .inner_box { 
+	  margin:auto;
+     position: relative; 
+     width: 80%; 
+     background-color: lightgrey; 
+     color:white;
+     border: solid 3px #9e70ba; 
+     /* text-align: center;  */
+  }
+  .left {
+	float:left;
+	width:30%;
+     border: solid 3px #9e70ba; 
+  }
+
+  .right {
+	 float:left;
+	width:33%;
+     border: solid 3px #9e70ba; 
+  }
+  .center {
+	 float:left;
+	width:34%;
+	overflow:hidden;
+     border: solid 3px #9e70ba; 
+  }
+  h1 {
+     clear:left; /*address interaction with float:left */
+  }
+</style>
+</head>
+<body>
+   <div id="fixed_header">
+      <p>Scroll Up and Down this page to see the parallax scrolling effect.</p>
+   </div>
+   <div class="parallax"></div>
+   <div id="intro">
+     <h1>Scott Larribeau</h1>
+     <p style="font-size:32px">Software Portfolio</p>
+   </div>
+   <div class="box" style="height:700px">
+     <h1>Profile</h1>
+     <h2>By Day:Scrum Master -- By Night:Developer</h2>
+     <div class="left">
+	     <h2>About Me</h2> 
+	     My daytime job is Agile Scrum Master. After work, I like to build sites to learn new software techniques (React, Angular 6, Django). I built this website to have a place to store all of these projects.
+     </div>
+     <div class="center">
+	     center
+	     <img src="me.png" style="width:100%" alt="head shot">
+     </div>
+     <div class="right">
+	     <h2>Details</h2> 
+	     Name: Scott Larribeau
+	     <br>
+             Location: SF/Bay Area
+	     <br>
+	     <a href="https://linkedin.com/in/scottlarribeau" target="_blank">LinkedIn Profile</a>
+	     <br>
+	     <a href="/ScottLarribeauResume.pdf" target="_blank">Resume</a>
+	     <br>
+	     Employer: <a href="https://www.solutionsATI.com" target="_blank">SolutionsATI</a>
+	     <br>
+	     Twitter: @slarribeau
+     </div>
+     <div style="clear:both">
+     </div>
+   </div>
+   <div class="box">
+     <h1>Projects</h1>
+     <div class="inner_box">
+	     <h2>Angular 6</h2>
+	     I am a big baseball fan and did not like the way that existing sites presented the standings. I wanted to also learn Angular Js, so I wrote my first version of this site in 2015 using Angular JS. Fast forward to 2018 - Angular 6 is now the latest version. Here is a <a href="/angular" target="_blank">link </a> to my baseball standings stie written in Angular 6.
+     </div>
+     <div class="inner_box">
+	     <h2>React</h2>
+	     Every front-end devolper I know is either using React or plans to start using it. I had to see what all the excitement was about. Here is a <a href="/react/baseball/build" target="_blank">link</a> to my baseball standings site written in React. 
+     </div>
+     <div class="inner_box">
+	     <h2>Django/Google Maps</h2>
+	     I worked at Civic Resource Group back in 2015. They were focused on public transportation and the technology for improving the experience. Many cities have open APIs that let you query bus routes and schedules. <a href="http://http://gtfs.bigbluebus.com/" target="_blank">Santa Monica's transit site</a> is a great example. I used it to build this <a href="http://54.219.125.204/" target="_blank"> site</a>, which displays every bus stop in Santa Monica overlaid on a Google Map. Clicking on each stop shows you when the next bus will arrive.
+     </div>
+   </div>
+   <div class="box">
+     <h1>Articles</h1>
+     <h2>Stay Tuned...</h2>
+   </div>
+   <div class="box">
+     <h1>Recommended Books</h1>
+   </div>
+
+</body>
+</html>
